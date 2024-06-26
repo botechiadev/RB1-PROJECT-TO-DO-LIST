@@ -2,7 +2,7 @@
     "compilerOptions": {
         "target": "ES6", /* Specify ECMAScript target version */
         "sourceMap": true, /* Generates corresponding '.map' file. */
-        "module": "commonjs",
+        "module": "CommonJS",
         "rootDir": "./src", /* Specify the root directory of input files. */
         "outDir": "./build", /* Redirect output structure to the directory. */
         "removeComments": true, /* Do not emit comments to output. */
@@ -10,14 +10,9 @@
         "noEmitOnError": true, /* Disable emitting files if any type checking errors are reported. */
         "esModuleInterop": true /* Adicione essa linha */,
         "strict": true,
-        "typeRoots": [
-            "./src/@types"
-        ]
+        "skipLibCheck": true,
+        "typeRoots": ["./src/@types"]
     },
-    "include": [
-        "src"
-    ],
-    "exclude": [
-        "node_modules"
-    ]
+        "include": ["src"],
+        "exclude": ["node_modules"]
 }
